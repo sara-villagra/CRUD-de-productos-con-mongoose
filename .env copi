@@ -1,0 +1,4 @@
+MONGODB_URLSTRING='mongodb+srv://user:password@cluster0.mu8e5vf.mongodb.net/'
+PORT=3008
+DATABASE_NAME = componentesDB
+COLLECTION_NAME = componentes
