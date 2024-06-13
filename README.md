@@ -18,26 +18,25 @@ Luego, agregar las siguientes dependencias:
 
 - npm i express mongoose morgan
 
-Abrir http://localhost:3008 con tu browser para ver los primeros resultados.
+Abrir http://localhost:3008 en tu browser para ver los primeros resultados.
 
 ## Conexion con mongoDB:
 Deberas regitrarte en MongoDB 
 - https://www.mongodb.com/
-
 - Crear un cluster.
-- Crear un usuario y contraseña para la base de datos, que usaras para conectar MongoDB con MongoDB Compass. Ademas se requerirá para la conexión con el editor de texto(Visual Studio Code)
+- Crear un usuario y contraseña para la base de datos, que usarás para conectar MongoDB con MongoDB-Compass. Además se requerirá para la conexión con el editor de texto(Visual Studio Code)
 #### importe: guardar el usuario y contraseña
 
-## MongoDB Compas
+## MongoDB Compass
 -  descargar MongoDB Compass
 - https://www.mongodb.com/products/compass
-- Crear una base de datos llamada componentesDB
-- Crear dentro una coleccion para los productos llamada  componentes
+- Crear una base de datos llamada: componentesDB
+- Crear dentro una colección para los productos llamada: componentes
 - Agregar los productos del archivo productos.json de este repositorio
 
 ## Environment Variables
-Para correr este proyecto, deberas modificar el archivo _env copy por .env.
-En  la cadena de conexion  MONGODB_URLSTRING , colocar el usuario y password que guardaste con anterioridad.
+Para correr este proyecto, deberás modificar el archivo _env copy por .env.
+En  la cadena de conexión  MONGODB_URLSTRING , colocar el usuario y password que guardaste con anterioridad.
  Ejemplo: MONGODB_URI=mongodb+srv://<usuario>:<contraseña>@cluster -->
 
 ## Rutas
