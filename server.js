@@ -40,8 +40,12 @@ app.get('/productos/categoria', (req, res) => {
    const categorias = componentes.map((componente) => {
     return componente.categoria
    })
-   const categoriasUnicas = [...new Set(categorias)]
-   res.json(categoriasUnicas)
+   if (categorias) {
+    const categoriasUnicas = [...new Set(categorias)]
+    return res.json(categoriasUnicas)
+   } else {
+    res.status(404).json({ message: 'No hay categorias' })
+   }
   })
   .catch((error) => {
    console.error('Error al obtener las categorias: ', error)
